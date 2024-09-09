@@ -5,3 +5,6 @@ Pessoa:
 Nome,
 CPF,
 Telefone.
+
+
+para rodar o projeto, no terminal, digite php -S localhost:3000
