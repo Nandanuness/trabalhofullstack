@@ -1,10 +1,11 @@
-Construir um cadastro de pessoas físicas, deve ser desenvolvido um backend (sugerimos o uso do NodeJs+Sequelize+Postgres para o Backend, também serão aceitos backends em Java+spring e em PHP + Laravel) que irá receber os dados da pessoa e persistí-las, o frontend deverá ser desenvolvido em HTML+CSS+JS(está permitido o uso de Bootstrap, Tailwind e outros frameworks CSS). A seguir segue a estrutura de dados Pessoa que deverá ser enviada pelo front e recebida e tratada no back:
+Consttução de um cadastro de pessoas físicas, obrigatório dados: pessoa, nome, CPF, telefone.
+
+Frontend: HTML e CSS.
+Backend: PHP.
+Banco de Dados: MYSQL.
 
 
-Pessoa:
-Nome,
-CPF,
-Telefone.
+Para rodar o projeto, no terminal, digite: php -S localhost:3000
 
-
-para rodar o projeto, no terminal, digite php -S localhost:3000
+Teste de população do banco de dados
+![image](https://github.com/user-attachments/assets/a75c7a2a-d3c3-44b8-8abc-664d2fd64eb6)
