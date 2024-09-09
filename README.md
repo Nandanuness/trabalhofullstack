@@ -1,4 +1,4 @@
-Consttução de um cadastro de pessoas físicas, obrigatório dados: pessoa, nome, CPF, telefone.
+Desenvolvimento de um cadastro de pessoas físicas, obrigatório dados: nome, CPF, telefone.
 
 Frontend: HTML e CSS.
 Backend: PHP.
