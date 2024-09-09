@@ -11,6 +11,21 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $estado = $_POST['estado'];
     $endereco = $_POST['endereco'];
 
+    $result = $conexao->query("SELECT COUNT(*) AS count FROM usuarios WHERE cpf='$cpf'");
+    $row = $result->fetch_assoc();
+    if ($row['count'] > 0) {
+        echo "O CPF '$cpf' já está cadastrado.";
+        exit(); 
+    }
+
+    $result = $conexao->query("SELECT COUNT(*) AS count FROM usuarios WHERE telefone='$telefone'");
+    $row = $result->fetch_assoc();
+    if ($row['count'] > 0) {
+        echo "O telefone '$telefone' já está cadastrado.";
+        exit(); 
+    }
+
+
     $sql = "INSERT INTO usuarios (nome, cpf, telefone, sexo, data_nasc, cidade, estado, endereco) 
             VALUES ('$nome', '$cpf', '$telefone', '$sexo', '$data_nasc', '$cidade', '$estado', '$endereco')";
 

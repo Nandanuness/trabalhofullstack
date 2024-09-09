@@ -10,6 +10,4 @@
     if ($conexao->connect_errno) {
         die("Erro ao conectar com o banco de dados: " . $conexao->connect_error);
     }
-    ?>
-
 ?>
